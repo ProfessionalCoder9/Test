@@ -4,7 +4,7 @@
 	<title>My Home Screen</title>
 	<style>
 		body {
-			background-color: #f2f2f2;
+			background-color: #0a2b3c; /* dark blue color */
 			font-family: Arial, sans-serif;
 		}
 
@@ -63,6 +63,7 @@
 			padding: 20px;
 			background-color: #fff;
 			border-radius: 5px;
+			overflow: hidden;
 		}
 
 		#section h2 {
@@ -72,8 +73,19 @@
 			margin-bottom: 10px;
 		}
 
-		#section button {
-			margin-right: 10px;
+		.button-row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.button-row .button {
+			margin: 5px;
+		}
+
+		.button-row .button:hover {
+			background-color: #3e8e41;
+			opacity: 0.8;
 		}
 	</style>
 </head>
@@ -92,35 +104,82 @@
 
 	<div id="section">
 		<h2>Action Games</h2>
-		<button class="button">Game 1</button>
-		<button class="button">Game 2</button>
-		<button class="button">Game 3</button>
+		<div class="button-row">
+			<button class="button">Game 1</button>
+			<button class="button">Game 2</button>
+			<button class="button">Game 3</button>
+			<button class="button">Game 4</button>
+			<button class="button">Game 5</button>
+			<button class="button">Game 6</button>
+			<button class="button">Game 7</button>
+			<button class="button">Game 8</button>
+			<button class="button">Game 9</button>
+			<button class="button">Game 10</button>
+		</div>
 	</div>
 
 	<div id="section">
-		<h2>Adventure Games</h2>
+		<h2>Adventure Games
+	<div class="button-row">
 		<button class="button">Game 1</button>
 		<button class="button">Game 2</button>
 		<button class="button">Game 3</button>
+		<button class="button">Game 4</button>
+		<button class="button">Game 5</button>
+		<button class="button">Game 6</button>
+		<button class="button">Game 7</button>
+		<button class="button">Game 8</button>
+		<button class="button">Game 9</button>
+		<button class="button">Game 10</button>
 	</div>
-
-	<div id="section">
-		<h2>Sports Games</h2>
-		<button class="button">Game 1</button>
-		<button class="button">Game 2</button>
-		<button class="button">Game 3</button>
-	</div>
-
-	<div id="section">
-		<h2>Strategy Games</h2>
-		<button class="button">Game 1</button>
-		<button class="button">Game 2</button>
-		<button class="button">Game 3</button>
-	</div>
-
-	<div id="section">
-		<h2>Puzzle Games</h2>
-	<button class="button">Game 1</button>
-	<button class="button">Game 2</button>
-	<button class="button">Game 3</button>
 </div>
+
+<div id="section">
+	<h2>Sports Games</h2>
+	<div class="button-row">
+		<button class="button">Game 1</button>
+		<button class="button">Game 2</button>
+		<button class="button">Game 3</button>
+		<button class="button">Game 4</button>
+		<button class="button">Game 5</button>
+		<button class="button">Game 6</button>
+		<button class="button">Game 7</button>
+		<button class="button">Game 8</button>
+		<button class="button">Game 9</button>
+		<button class="button">Game 10</button>
+	</div>
+</div>
+
+<div id="section">
+	<h2>Strategy Games</h2>
+	<div class="button-row">
+		<button class="button">Game 1</button>
+		<button class="button">Game 2</button>
+		<button class="button">Game 3</button>
+		<button class="button">Game 4</button>
+		<button class="button">Game 5</button>
+		<button class="button">Game 6</button>
+		<button class="button">Game 7</button>
+		<button class="button">Game 8</button>
+		<button class="button">Game 9</button>
+		<button class="button">Game 10</button>
+	</div>
+</div>
+
+<div id="section">
+	<h2>Puzzle Games</h2>
+	<div class="button-row">
+		<button class="button">Game 1</button>
+		<button class="button">Game 2</button>
+		<button class="button">Game 3</button>
+		<button class="button">Game 4</button>
+		<button class="button">Game 5</button>
+		<button class="button">Game 6</button>
+		<button class="button">Game 7</button>
+		<button class="button">Game 8</button>
+		<button class="button">Game 9</button>
+		<button class="button">Game 10</button>
+	</div>
+</div>
+</body>
+</html>
