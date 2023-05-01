@@ -4,182 +4,107 @@
 	<title>My Home Screen</title>
 	<style>
 		body {
-			background-color: #0a2b3c; /* dark blue color */
+			background-color: #0a2b5e;
 			font-family: Arial, sans-serif;
-		}
-
-		#header {
-			background-color: #333;
 			color: #fff;
-			padding: 20px;
-			text-align: center;
-			font-size: 30px;
-			font-weight: bold;
-		}
-
-		#nav {
-			background-color: #fff;
-			border-bottom: 1px solid #ccc;
-			overflow: hidden;
-		}
-
-		#nav a {
-			float: left;
-			display: block;
-			color: #333;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-			font-size: 17px;
-			font-weight: bold;
-			border-right: 1px solid #ccc;
-		}
-
-		#nav a:hover {
-			background-color: #ddd;
-			color: #333;
 		}
 
 		.button {
-			display: inline-block;
-			background-color: #4CAF50;
-			border: none;
-			color: white;
-			padding: 15px 25px;
-			text-align: center;
-			text-decoration: none;
-			font-size: 20px;
+			display: block;
 			margin: 10px;
-			cursor: pointer;
-			border-radius: 5px;
-		}
-
-		.button:hover {
-			background-color: #3e8e41;
-		}
-
-		#section {
-			margin: 30px;
-			padding: 20px;
+			padding: 10px 20px;
 			background-color: #fff;
+			color: #0a2b5e;
+			border: none;
 			border-radius: 5px;
-			overflow: hidden;
+			font-size: 16px;
+			cursor: pointer;
 		}
 
-		#section h2 {
-			font-size: 24px;
-			font-weight: bold;
-			margin-top: 0px;
-			margin-bottom: 10px;
-		}
-
-		.button-row {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-
-		.button-row .button {
-			margin: 5px;
-		}
-
-		.button-row .button:hover {
-			background-color: #3e8e41;
-			opacity: 0.8;
-		}
+		/* rest of the CSS code here */
 	</style>
 </head>
 <body>
-	<div id="header">
-		My Home Screen
-	</div>
-
-	<div id="nav">
-		<a href="#">Action</a>
-		<a href="#">Adventure</a>
-		<a href="#">Sports</a>
-		<a href="#">Strategy</a>
-		<a href="#">Puzzle</a>
-	</div>
-
-	<div id="section">
+	<h1>Welcome to My Game Site</h1>
+	<nav>
+		<a href="#action-games">Action Games</a>
+		<a href="#adventure-games">Adventure Games</a>
+		<a href="#sports-games">Sports Games</a>
+		<a href="#strategy-games">Strategy Games</a>
+		<a href="#puzzle-games">Puzzle Games</a>
+	</nav>
+	<div id="action-games">
 		<h2>Action Games</h2>
-		<div class="button-row">
-			<button class="button">Game 1</button>
-			<button class="button">Game 2</button>
-			<button class="button">Game 3</button>
-			<button class="button">Game 4</button>
-			<button class="button">Game 5</button>
-			<button class="button">Game 6</button>
-			<button class="button">Game 7</button>
-			<button class="button">Game 8</button>
-			<button class="button">Game 9</button>
-			<button class="button">Game 10</button>
-		</div>
+		<button class="button" onclick="playGame('game1')">Game 1</button>
+		<button class="button" onclick="playGame('game2')">Game 2</button>
+		<button class="button" onclick="playGame('game3')">Game 3</button>
+		<button class="button" onclick="playGame('game4')">Game 4</button>
+		<button class="button" onclick="playGame('game5')">Game 5</button>
+		<button class="button" onclick="playGame('game6')">Game 6</button>
+		<button class="button" onclick="playGame('game7')">Game 7</button>
+		<button class="button" onclick="playGame('game8')">Game 8</button>
+		<button class="button" onclick="playGame('game9')">Game 9</button>
+		<button class="button" onclick="playGame('game10')">Game 10</button>
 	</div>
-
-	<div id="section">
-		<h2>Adventure Games
-	<div class="button-row">
-		<button class="button">Game 1</button>
-		<button class="button">Game 2</button>
-		<button class="button">Game 3</button>
-		<button class="button">Game 4</button>
-		<button class="button">Game 5</button>
-		<button class="button">Game 6</button>
-		<button class="button">Game 7</button>
-		<button class="button">Game 8</button>
-		<button class="button">Game 9</button>
-		<button class="button">Game 10</button>
+	<div id="adventure-games">
+		<h2>Adventure Games</h2>
+		<button class="button" onclick="playGame('game11')">Game 11</button>
+		<button class="button" onclick="playGame('game12')">Game 12</button>
+		<button class="button" onclick="playGame('game13')">Game 13</button>
+		<button class="button" onclick="playGame('game14')">Game 14</button>
+		<button class="button" onclick="playGame('game15')">Game 15</button>
+		<button class="button" onclick="playGame('game16')">Game 16</button>
+		<button class="button" onclick="playGame('game17')">Game 17</button>
+		<button class="button" onclick="playGame('game18')">Game 18</button>
+		<button class="button" onclick="playGame('game19')">Game 19</button>
+		<button class="button" onclick="playGame('game20')">Game 20</button>
 	</div>
+	<div id="sports-games">
+		<h2>Sports Games</h2>
+		<button class="button" onclick="playGame('game21')">Game 21</button>
+		<button class="button"
+<button class="button" onclick="playGame('game22')">Game 22</button>
+<button class="button" onclick="playGame('game23')">Game 23</button>
+<button class="button" onclick="playGame('game24')">Game 24</button>
+<button class="button" onclick="playGame('game25')">Game 25</button>
+<button class="button" onclick="playGame('game26')">Game 26</button>
+<button class="button" onclick="playGame('game27')">Game 27</button>
+<button class="button" onclick="playGame('game28')">Game 28</button>
+<button class="button" onclick="playGame('game29')">Game 29</button>
+<button class="button" onclick="playGame('game30')">Game 30</button>
 </div>
-
-<div id="section">
-	<h2>Sports Games</h2>
-	<div class="button-row">
-		<button class="button">Game 1</button>
-		<button class="button">Game 2</button>
-		<button class="button">Game 3</button>
-		<button class="button">Game 4</button>
-		<button class="button">Game 5</button>
-		<button class="button">Game 6</button>
-		<button class="button">Game 7</button>
-		<button class="button">Game 8</button>
-		<button class="button">Game 9</button>
-		<button class="button">Game 10</button>
-	</div>
+<div id="strategy-games">
+<h2>Strategy Games</h2>
+<button class="button" onclick="playGame('game31')">Game 31</button>
+<button class="button" onclick="playGame('game32')">Game 32</button>
+<button class="button" onclick="playGame('game33')">Game 33</button>
+<button class="button" onclick="playGame('game34')">Game 34</button>
+<button class="button" onclick="playGame('game35')">Game 35</button>
+<button class="button" onclick="playGame('game36')">Game 36</button>
+<button class="button" onclick="playGame('game37')">Game 37</button>
+<button class="button" onclick="playGame('game38')">Game 38</button>
+<button class="button" onclick="playGame('game39')">Game 39</button>
+<button class="button" onclick="playGame('game40')">Game 40</button>
 </div>
-
-<div id="section">
-	<h2>Strategy Games</h2>
-	<div class="button-row">
-		<button class="button">Game 1</button>
-		<button class="button">Game 2</button>
-		<button class="button">Game 3</button>
-		<button class="button">Game 4</button>
-		<button class="button">Game 5</button>
-		<button class="button">Game 6</button>
-		<button class="button">Game 7</button>
-		<button class="button">Game 8</button>
-		<button class="button">Game 9</button>
-		<button class="button">Game 10</button>
-	</div>
+<div id="puzzle-games">
+<h2>Puzzle Games</h2>
+<button class="button" onclick="playGame('game41')">Game 41</button>
+<button class="button" onclick="playGame('game42')">Game 42</button>
+<button class="button" onclick="playGame('game43')">Game 43</button>
+<button class="button" onclick="playGame('game44')">Game 44</button>
+<button class="button" onclick="playGame('game45')">Game 45</button>
+<button class="button" onclick="playGame('game46')">Game 46</button>
+<button class="button" onclick="playGame('game47')">Game 47</button>
+<button class="button" onclick="playGame('game48')">Game 48</button>
+<button class="button" onclick="playGame('game49')">Game 49</button>
+<button class="button" onclick="playGame('game50')">Game 50</button>
 </div>
-
-<div id="section">
-	<h2>Puzzle Games</h2>
-	<div class="button-row">
-		<button class="button">Game 1</button>
-		<button class="button">Game 2</button>
-		<button class="button">Game 3</button>
-		<button class="button">Game 4</button>
-		<button class="button">Game 5</button>
-		<button class="button">Game 6</button>
-		<button class="button">Game 7</button>
-		<button class="button">Game 8</button>
-		<button class="button">Game 9</button>
-		<button class="button">Game 10</button>
-	</div>
-</div>
+	<script>
+	function playGame(gameName) {
+		// Function to play the selected game
+		console.log("Playing game: " + gameName);
+		// Replace with code to launch the game
+	}
+</script>
 </body>
 </html>
