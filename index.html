@@ -1,90 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Unblocked Games</title>
-  <style>
-    body {
-      background-color: #1a1a1a;
-      font-family: Arial, sans-serif;
-      color: #fff;
-    }
-    
-    h1 {
-      text-align: center;
-      font-size: 5em;
-      margin-top: 0;
-    }
-    
-    .game-button {
-      background-color: #ff5e5e;
-      color: #fff;
-      border: none;
-      padding: 20px;
-      font-size: 2em;
-      border-radius: 10px;
-      margin: 10px;
-      cursor: pointer;
-      box-shadow: 0 10px 20px rgba(0,0,0,.3);
-      transition: all .3s;
-    }
-    
-    .game-button:hover {
-      background-color: #ff4040;
-      box-shadow: 0 15px 25px rgba(0,0,0,.4);
-      transform: translateY(-5px);
-    }
-    
-    .games-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 50px;
-    }
-    
-    .game {
-      margin: 20px;
-      text-align: center;
-    }
-    
-    .game img {
-      width: 300px;
-      height: 300px;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0,0,0,.3);
-      transition: all .3s;
-      cursor: pointer;
-    }
-    
-    .game img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 15px 25px rgba(0,0,0,.4);
-    }
-  </style>
-</head>
-<body>
-  <h1>Unblocked Games</h1>
-  
-  <div class="games-container">
-    <div class="game">
-      <a href="game1.html"><img src="game1.jpg" alt="Game 1"></a>
-      <h2>Game 1</h2>
-      <button class="game-button">Play Now</button>
-    </div>
-    
-    <div class="game">
-      <a href="game2.html"><img src="game2.jpg" alt="Game 2"></a>
-      <h2>Game 2</h2>
-      <button class="game-button">Play Now</button>
-    </div>
-    
-    <div class="game">
-      <a href="game3.html"><img src="game3.jpg" alt="Game 3"></a>
-      <h2>Game 3</h2>
-      <button class="game-button">Play Now</button>
-    </div>
-    
-    <!-- Add more game elements here -->
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unblocked Games</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Unblocked Games</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New Games</a></li>
+          <li><a href="#">Popular Games</a></li>
+          <li><a href="#">All Games</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="featured-games">
+        <h2>Featured Games</h2>
+        <div class="game-list">
+          <a href="#">
+            <img src="game1.png" alt="Game 1" />
+            <h3>Game 1</h3>
+          </a>
+          <a href="#">
+            <img src="game2.png" alt="Game 2" />
+            <h3>Game 2</h3>
+          </a>
+          <a href="#">
+            <img src="game3.png" alt="Game 3" />
+            <h3>Game 3</h3>
+          </a>
+        </div>
+      </section>
+
+      <section class="new-games">
+        <h2>New Games</h2>
+        <div class="game-list">
+          <a href="#">
+            <img src="game4.png" alt="Game 4" />
+            <h3>Game 4</h3>
+          </a>
+          <a href="#">
+            <img src="game5.png" alt="Game 5" />
+            <h3>Game 5</h3>
+          </a>
+          <a href="#">
+            <img src="game6.png" alt="Game 6" />
+            <h3>Game 6</h3>
+          </a>
+        </div>
+      </section>
+
+      <section class="popular-games">
+        <h2>Popular Games</h2>
+        <div class="game-list">
+          <a href="#">
+            <img src="game7.png" alt="Game 7" />
+            <h3>Game 7</h3>
+          </a>
+          <a href="#">
+            <img src="game8.png" alt="Game 8" />
+            <h3>Game 8</h3>
+          </a>
+          <a href="#">
+            <img src="game9.png" alt="Game 9" />
+            <h3>Game 9</h3>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Unblocked Games</p>
+    </footer>
+  </body>
 </html>
