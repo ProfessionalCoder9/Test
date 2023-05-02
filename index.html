@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Platformer Game</title>
+    <style>
+      #game-area {
+        border: 1px solid black;
+        width: 400px;
+        height: 300px;
+        position: relative;
+      }
+      
+      .player {
+        background-color: blue;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      
+      .platform {
+        background-color: green;
+        width: 100px;
+        height: 10px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-area">
+      <div id="player" class="player"></div>
+      <div id="platform1" class="platform" style="bottom: 50px; left: 100px;"></div>
+      <div id="platform2" class="platform" style="bottom: 100px; left: 200px;"></div>
+      <div id="platform3" class="platform" style="bottom: 150px; left: 50px;"></div>
+    </div>
+    <script src="platformer.js"></script>
+  </body>
+</html>
 
