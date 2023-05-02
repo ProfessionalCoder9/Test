@@ -38,4 +38,112 @@
     <script src="platformer.js"></script>
   </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Platformer Game</title>
+	<style>
+		#game-canvas {
+			background-color: #ddd;
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="game-canvas" width="800" height="600"></canvas>
+	<script>
+		// Get the canvas element and context
+		var canvas = document.getElementById("game-canvas");
+		var ctx = canvas.getContext("2d");
+		
+		// Define variables for the player
+		var playerX = canvas.width/2;
+		var playerY = canvas.height/2;
+		var playerWidth = 50;
+		var playerHeight = 50;
+		var playerSpeed = 5;
+		var playerJumpSpeed = 12;
+		var playerJumping = false;
+		var playerGrounded = false;
+		
+		// Define variables for the platform
+		var platformX = canvas.width/2 - 100;
+		var platformY = canvas.height - 50;
+		var platformWidth = 200;
+		var platformHeight = 20;
+		
+		// Add keyboard event listeners to move the player
+		document.addEventListener("keydown", keyDownHandler, false);
+		document.addEventListener("keyup", keyUpHandler, false);
+		
+		// Define functions to handle keyboard events
+		function keyDownHandler(event) {
+			if(event.keyCode == 39) {
+				// Right arrow key
+				playerX += playerSpeed;
+			}
+			else if(event.keyCode == 37) {
+				// Left arrow key
+				playerX -= playerSpeed;
+			}
+			else if(event.keyCode == 32) {
+				// Space bar key
+				if(playerGrounded && !playerJumping) {
+					playerJumping = true;
+					playerGrounded = false;
+					playerY -= playerJumpSpeed;
+				}
+			}
+		}
+		
+		function keyUpHandler(event) {
+			if(event.keyCode == 39 || event.keyCode == 37) {
+				// Stop moving the player when the arrow key is released
+				playerSpeed = 0;
+			}
+		}
+		
+		// Define a function to draw the player
+		function drawPlayer() {
+			ctx.beginPath();
+			ctx.rect(playerX, playerY, playerWidth, playerHeight);
+			ctx.fillStyle = "#0095DD";
+			ctx.fill();
+			ctx.closePath();
+		}
+		
+		// Define a function to draw the platform
+		function drawPlatform() {
+			ctx.beginPath();
+			ctx.rect(platformX, platformY, platformWidth, platformHeight);
+			ctx.fillStyle = "#000";
+			ctx.fill();
+			ctx.closePath();
+		}
+		
+		// Define a function to check if the player is colliding with the platform
+		function checkCollisions() {
+			if(playerX < platformX + platformWidth && playerX + playerWidth > platformX && playerY + playerHeight > platformY && playerY < platformY + platformHeight) {
+				playerGrounded = true;
+				playerJumping = false;
+			}
+			else {
+				playerGrounded = false;
+			}
+		}
+		
+		// Define the game loop
+		function gameLoop() {
+			// Clear the canvas
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			
+			// Draw the player and platform
+			drawPlayer();
+			drawPlatform();
+			
+			// Check for collisions between the player and platform
+			checkCollisions();
+			
+			// Update the player's position if they are jumping
+
 
